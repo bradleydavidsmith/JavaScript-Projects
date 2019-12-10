@@ -27,15 +27,13 @@ document.write(dog2C+"<br>");
 // Expressions
 document.write(7+8+"<br>");
 document.write(7/3+"<br>");
-document.getElementById("Green_Text").textContent = c;
 
 // Functions
 function myFirstFunction() {
-  var str = "This text is green";
-  var result = str.fontcolor("green");
-  document.getElementById("Green_Text").innerHTML = result;
+  var str = "This text is blue";
+  document.getElementById("myButton").textContent = str;
+  document.getElementById("myButton").style.color="blue";
   //The other way:
-  //document.getElementById("Green_Text").textContent = str;
-  //document.getElementById("Green_Text").style.color="green";
+  //var result = str.fontcolor("blue");
+  //document.getElementById("myButton").innerHTML = result;
 }
-
