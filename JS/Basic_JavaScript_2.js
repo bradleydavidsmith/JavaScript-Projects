@@ -10,3 +10,9 @@ function myFunc2() {
   str += ".";
   document.getElementById("myPara2").innerHTML = str;
 }
+
+function changeText() {
+  var str = "New Text";
+  str = str.fontcolor("red");
+  document.getElementById("myPara3").innerHTML = str;
+}
