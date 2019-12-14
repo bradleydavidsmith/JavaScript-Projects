@@ -29,6 +29,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+/* Automatic Slideshow */
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("text");
