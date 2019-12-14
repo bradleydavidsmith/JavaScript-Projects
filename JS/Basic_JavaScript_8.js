@@ -53,4 +53,5 @@ function fixedFunc() {
   document.getElementById("fixedNum").innerHTML = num.toFixed(3);
 }
 
+/* valueOf() returns a primitive of the given type */
 document.write(("100" + "23").valueOf() + "<br>");
