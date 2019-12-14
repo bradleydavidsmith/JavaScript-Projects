@@ -32,7 +32,7 @@ function currentSlide(n) {
 /* Automatic Slideshow */
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("text");
+  var slides = document.getElementsByClassName("mySlides");
   console.log("slides.length = " + slides.length);
   for (i = 0; i < slides.length; i++) {
     console.log("i = " + i);
