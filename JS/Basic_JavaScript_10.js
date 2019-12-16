@@ -103,7 +103,7 @@ var skip = 3;
 var outstr = "";
 
 for (var i = 0; i < 10; i += 1) {
-  if (i == 3) { continue; }
+  if (i == skip) { continue; }
   outstr += i + "<br>";
 }
 
