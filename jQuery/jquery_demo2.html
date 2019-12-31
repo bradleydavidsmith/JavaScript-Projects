@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Demo</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+</body>
+
+  <script>
+    /* On loading the document... */
+    $(document).ready(function(){
+      /* Add a button */
+      $("<button id='control'>Close</button>").appendTo( document.body );
+      /* CSS the button and make it bigger */
+      $("#control").css({"width":"100", "height":"50"});
+      /* If the button is clicked...  */
+      $("#control").click(function() {
+        var status = $("#control").text();
+
+        if (status == "Close") {
+          /* Change the button's text,  */
+          $("#control").text("Open");
+          /* and Close the paragraphs */
+          $("p").slideUp(800);
+        } else {
+          /* Change the button's text, */
+          $("#control").text("Close");
+          /* and Open the paragraphs */
+          $("p").slideDown(800);
+        }
+      });
+
+      /* Add some html to play with */
+      $("html").append(
+          "<div='container'>\
+            <div='inner'>\
+              <h1>Basic jQuery</h1>\
+              <p id='1'>Paragraph 1</p>\
+              <p id='2'>Paragraph 2</p>\
+              <p id='3'>Paragraph 3</p>\
+            </div>\
+          </div>"
+      );
+      $("#2").css({"color":"red"});
+
+    });
+  </script>
+</body>
+</html>
